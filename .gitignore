@@ -1,0 +1,12 @@
+*.idea
+*__pycache__
+*debug.log
+run.sh
+*.env
+git
+*sky_env
+nural_models/
+run.bat
+run_com-model.bat
+net_stack/
+
