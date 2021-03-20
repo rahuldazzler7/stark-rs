@@ -55,7 +55,6 @@ class TrainBot:
         ops.reset_default_graph()
 
     def generate_network(self, data: dict):
-        print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
         self.pattern_evaluation(data=data)
         self.training_evaluation()
         net = tflearn.input_data(shape=[None, len(self.training[0])])
