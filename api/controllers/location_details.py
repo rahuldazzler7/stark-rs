@@ -1,6 +1,6 @@
 from flask_restful import Resource
-from common.location.location_handler import Location_details, find_nearest_locations, get_place
-from common.flask_ease.request_validation import validate_request
+from api.common.location.location_handler import Location_details, find_nearest_locations, get_place
+from api.common.flask_ease.request_validation import validate_request
 
 
 class Location_Search(Resource):

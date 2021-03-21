@@ -3,7 +3,7 @@ import webbrowser
 import requests
 from os import environ as env
 from time import sleep
-from common.webdriver_handler.configuration import (get_web_driver_options,
+from api.common.webdriver_handler.configuration import (get_web_driver_options,
                                                     get_chrome_web_driver,
                                                     set_ignore_certificate_error,
                                                     set_browser_as_incognito,

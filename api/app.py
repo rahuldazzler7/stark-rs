@@ -1,14 +1,11 @@
 from flask import Flask
 from flask_restful import Api
-from dotenv import load_dotenv
 
-from controllers.search_queriesController import Wiki_Search, Google_search, Open_youtube
-from controllers.dateTimeController import Date_t, Date_time, Time_t
-from controllers.emailController import Email_sending
-from controllers.detector import Mask_Detector, Face_Detector
-from controllers.location_details import Where_am_I, Location_near_me
-
-load_dotenv(verbose=True)
+from api.controllers.search_queriesController import Wiki_Search, Google_search, Open_youtube
+from api.controllers.dateTimeController import Date_t, Date_time, Time_t
+from api.controllers.emailController import Email_sending
+from api.controllers.detector import Mask_Detector, Face_Detector
+from api.controllers.location_details import Where_am_I, Location_near_me
 
 
 app = Flask(__name__)
