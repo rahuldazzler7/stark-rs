@@ -1,8 +1,5 @@
 import pytest
-
-
-def get_size(num):
-    return num
+from common.system_analyser.memomry_byte_scaling import get_size
 
 
 def test_get_size():
