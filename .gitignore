@@ -6,7 +6,7 @@ run.sh
 git
 *sky_env
 nural_models/
-run.bat
+run-local.bat
 run_com-model.bat
 net_stack/
 
