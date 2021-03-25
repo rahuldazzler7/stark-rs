@@ -8,5 +8,5 @@ git
 nural_models/
 run-local.bat
 run_com-model.bat
-net_stack/
-
+dependencies/net_stack/
+xyz.py

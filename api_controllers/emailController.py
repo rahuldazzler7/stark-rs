@@ -1,7 +1,7 @@
-from api.common.email_handler.email_handler import Send_Email
+from common.email_handler.email_handler import Send_Email
 from os import environ as env
 from flask_restful import Resource
-from api.common.flask_ease.request_validation import validate_request
+from common.flask_ease.request_validation import validate_request
 
 
 class Email_sending(Resource):

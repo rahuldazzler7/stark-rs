@@ -1,5 +1,5 @@
-from api.common.stark_eye.mask_detection import decison_make
-from api.common.stark_eye.human_face_detection import human_face_detector
+from common.stark_eye.mask_detection import decison_make
+from common.stark_eye.human_face_detection import human_face_detector
 from flask_restful import Resource
 from os import environ as env
 

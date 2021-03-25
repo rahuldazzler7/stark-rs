@@ -1,9 +1,9 @@
-from controllers.speaker import speak, take_speech, speech_control, wish_me
-from controllers.io import decision_divider
+from decison_controllers.speaker import speak, take_speech, speech_control, wish_me
+from decison_controllers.io import decision_divider
 from os import environ as env
 import random
 from train_startk.model_trainer import TrainBot
-from controllers.decision_out import bag_of_words
+from decison_controllers.decision_out import bag_of_words
 import numpy
 
 tb = TrainBot(end_point=env['OVERRIDE_S3_ENDPOINT'], aws_access=env['access'], aws_secret=env['secret'],

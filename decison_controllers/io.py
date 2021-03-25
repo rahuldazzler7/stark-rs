@@ -1,4 +1,4 @@
-from controllers.speaker import speak, take_speech, speech_control, wish_me
+from decison_controllers.speaker import speak, take_speech, speech_control, wish_me
 import requests
 
 

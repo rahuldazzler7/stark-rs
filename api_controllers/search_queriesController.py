@@ -1,10 +1,8 @@
 import wikipedia
-import requests
 import webbrowser
-from bs4 import BeautifulSoup
 from os import environ as env
 from flask_restful import Resource
-from api.common.flask_ease.request_validation import validate_request
+from common.flask_ease.request_validation import validate_request
 
 
 class Wiki_Search(Resource):
