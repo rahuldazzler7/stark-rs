@@ -1,4 +1,4 @@
-import psutil
+
 def get_size(bytes: int, suffix="B") -> str:
     """
         Scale bytes to its proper format
