@@ -2,7 +2,7 @@ from decison_controllers.speaker import speak, take_speech, speech_control, wish
 from decison_controllers.io import decision_divider
 from os import environ as env
 import random
-from train_startk.model_trainer import TrainBot
+from train_stark.model_trainer import TrainBot
 from decison_controllers.decision_out import bag_of_words
 import numpy
 

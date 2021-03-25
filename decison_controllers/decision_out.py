@@ -2,7 +2,7 @@ import numpy
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
 import random
-from train_startk.model_trainer import TrainBot
+from train_stark.model_trainer import TrainBot
 from os import environ as env
 
 stemmer = LancasterStemmer()
