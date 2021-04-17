@@ -31,7 +31,9 @@ def initialize_app():
             reply = f"{random.choice(responses)}"
             decision_divider(inp.lower(), reply)
     except Exception as err:
-        decision_divider("Did not understand", "Did not understand")
+        speak("Did not understand")
+        print ("======== error ========")
+        print(err.__cause__)
         return "Did not understand"
 
 

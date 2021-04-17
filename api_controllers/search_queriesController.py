@@ -13,7 +13,7 @@ class Wiki_Search(Resource):
             results = wikipedia.summary(f"{quer}", sentences=5)
             return {"status": True, "type": "wikipedia", "data": results}
         except Exception as er:
-            return {"status": False, "type": "wikipedia", "data": f"{er}"}
+            return {"status": False, "tune": True, "type": "wikipedia", "data": f"{er}"}
 
 
 class Google_search(Resource):
@@ -24,12 +24,12 @@ class Google_search(Resource):
             google_search = webbrowser.get(f"{env['BROWSER_PATH']} %s").open(
                 "https://www.google.com/search?q=" + query)
             if google_search is True:
-                return {"status": True, "type": "google_search", "data": "Here is your search result sir"}
+                return {"status": True, "tune": True,  "type": "google_search", "data": "Here is your search result sir"}
             else:
-                return {"status": False, "type": "google_search", "data": "Something went wrong, sir could you please "
+                return {"status": False, "tune": True,  "type": "google_search", "data": "Something went wrong, sir could you please "
                                                                           "check your browser path"}
         except Exception as er:
-            return {"status": False, "type": "google_search", "data": f"{er}"}
+            return {"status": False, "tune": True,  "type": "google_search", "data": f"{er.__cause__}"}
 
 
 class Open_youtube(Resource):
@@ -45,9 +45,9 @@ class Open_youtube(Resource):
                 you_search = webbrowser.get(f"{env['BROWSER_PATH']} %s").open(
                     "https://www.youtube.com/")
             if you_search is True:
-                return {"status": True, "type": "youtube_search", "data": "Here is your youtube search result sir"}
+                return {"status": True, "tune": True,  "type": "youtube_search", "data": "Here is your youtube search result sir"}
             else:
-                return {"status": False, "type": "youtube_search", "data": "Something went wrong, sir could you please "
+                return {"status": False, "tune": True,  "type": "youtube_search", "data": "Something went wrong, sir could you please "
                                                                           "check your browser path"}
         except Exception as er:
-            return {"status": False, "type": "youtube_search", "data": f"{er}"}
+            return {"status": False, "tune": True,  "type": "youtube_search", "data": f"{er.__cause__}"}

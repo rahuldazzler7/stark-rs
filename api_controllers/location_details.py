@@ -13,7 +13,7 @@ class Where_am_I(Resource):
         loc_obj = Location_details()
         my_loc = loc_obj.get_my_coordinates()
         me = get_place(my_loc["latitude"], my_loc["longitude"])
-        return {"status": True, "type": "where_am_i", "data": me["place"]}
+        return {"status": True, "tune": True,  "type": "where_am_i", "data": me["place"]}
 
 
 class Location_distance(Resource):
@@ -25,4 +25,4 @@ class Location_near_me(Resource):
     def post(self):
         vr = validate_request("query")
         res = find_nearest_locations(vr["query"])
-        return {"status": True, "type": "location_near_me", "data": res["message"]}
+        return {"status": True, "tune": True,  "type": "location_near_me", "data": res["message"]}
