@@ -6,6 +6,7 @@ from api_controllers.dateTimeController import Date_t, Date_time, Time_t
 from api_controllers.emailController import Email_sending
 from api_controllers.detector import Mask_Detector, Face_Detector
 from api_controllers.location_details import Where_am_I, Location_near_me
+from api_controllers.sys_details_controller import System_info, CPU_info, Last_boot_info, Disk_info, Memory_info
 
 
 app = Flask(__name__)
@@ -22,6 +23,11 @@ api.add_resource(Mask_Detector, "/api/v1/detect_mask")
 api.add_resource(Face_Detector, "/api/v1/detect_face")
 api.add_resource(Where_am_I, "/api/v1/where_am_i")
 api.add_resource(Location_near_me, "/api/v1/location_near_me")
+api.add_resource(System_info, "/api/v1/system_information")
+api.add_resource(CPU_info, "/api/v1/cpu_information")
+api.add_resource(Last_boot_info, "/api/v1/lst_boot_information")
+api.add_resource(Disk_info, "/api/v1/disk_information")
+api.add_resource(Memory_info, "/api/v1/memory_information")
 
 if __name__ == "__main__":
-    app.run(debug=False, host='0.0.0.0', port=5001)
+    app.run(debug=True, host='0.0.0.0', port=5001)
